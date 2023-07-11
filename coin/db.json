@@ -1,0 +1,23 @@
+{
+  "product": [
+    {
+      "uniqueId": 1,
+      "image": "https://i.ibb.co/3SMLrjs/bitcoin.png",
+      "name": "BTC",
+      "price": 25000
+    },
+    {
+      "uniqueId": 2,
+      "image": "https://i.ibb.co/WV5vNr2/dogecoin.png",
+      "name": "DODGE",
+      "price": 0.75
+    },
+    {
+      "uniqueId": 3,
+      "image": "https://i.ibb.co/ZMkV65r/ripple.png",
+      "name": "RIPPLE",
+      "price": 1.5
+    }
+  ],
+  "cart": []
+}
