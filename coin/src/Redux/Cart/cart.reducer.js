@@ -7,12 +7,15 @@ ADD_CART_LOADING,
   GET_CART_SUCCESS,
 } from "./cart.actionType";
 
+let cartItems=JSON.parse(localStorage.getItem("persist:root"));
+console.log("cartItem",cartItems);
+
 let initData = {
   cart: [],
   loading: false,
   error: false,
 };
-
+console.log("HEHEHE",initData.cart);
 export let cartReducer = (state = initData, { type, payload }) => {
   switch (type) {
     case GET_CART_ERROR: {

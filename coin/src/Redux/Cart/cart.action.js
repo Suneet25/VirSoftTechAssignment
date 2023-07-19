@@ -14,7 +14,7 @@ import axios from "axios";
 export let getCart = () => async (dispatch) => {
   dispatch({ type: GET_CART_LOADING });
   try {
-    let res = await axios.get("https://blogapi-onq7.onrender.com/cart");
+    let res = await axios.get("http://localhost:8000/cart");
     dispatch({ type: GET_CART_SUCCESS, payload: res.data });
   } catch (error) {
     console.log(error);
@@ -36,16 +36,16 @@ export let addCart = (data) => async (dispatch) => {
 
 //updateToCart
 
-export let updateCart = (id, data) => async (dispatch) => {
-  dispatch({ type: UPDATE_CART_LOADING });
-  try {
-    let res = await axios.patch(
-      `https://blogapi-onq7.onrender.com/cart/${id}`,
-      data
-    );
-    dispatch({ type: UPDATE_CART_SUCCESS, payload: { id, data } });
-  } catch (error) {
-    console.log(error);
-    dispatch({ type: UPDATE_CART_ERROR });
-  }
-};
+// export let updateCart = (id, data) => async (dispatch) => {
+//   dispatch({ type: UPDATE_CART_LOADING });
+//   try {
+//     let res = await axios.patch(
+//       `https://blogapi-onq7.onrender.com/cart/${id}`,
+//       data
+//     );
+//     dispatch({ type: UPDATE_CART_SUCCESS, payload: { id, data } });
+//   } catch (error) {
+//     console.log(error);
+//     dispatch({ type: UPDATE_CART_ERROR });
+//   }
+// };

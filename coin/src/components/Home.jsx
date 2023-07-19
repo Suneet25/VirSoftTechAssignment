@@ -18,9 +18,9 @@ dispatch(getProducts())
   };
 
   //getCarts
-  let getCarts = async () => {
-   dispatch(getCart())
-  };
+  // let getCarts = async () => {
+  //  dispatch(getCart())
+  // };
 
 
 
@@ -33,9 +33,9 @@ dispatch(getProducts())
     getProduct();
   }, []);
 
-  useEffect(() => {
-    getCarts();
-  }, []);
+  // useEffect(() => {
+  //   getCarts();
+  // }, []);
   return (
     <div>
       <h1>COINS</h1>

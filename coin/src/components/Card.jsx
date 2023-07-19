@@ -1,7 +1,7 @@
 import axios from "axios";
 import React, { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { addCart, getCart, updateCart } from "../Redux/Cart/cart.action";
+import { addCart, getCart  } from "../Redux/Cart/cart.action";
 
 const Card = ({ products }) => {
   let [qty, setQty] = useState(null);
@@ -13,6 +13,8 @@ const Card = ({ products }) => {
   let addToCart = (product) => {
     let cartAdd = { ...product, qty: +qty };
     dispatch(addCart(cartAdd));
+   
+
   };
 
   return (
